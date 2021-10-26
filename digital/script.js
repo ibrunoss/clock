@@ -5,9 +5,9 @@ const clock = () => {
 
   const [h, m, s] = new Date().toLocaleTimeString().split(":");
 
-  hourElement.innerHTML = h < 10 ? `0${h}` : h;
-  minuteElement.innerHTML = m < 10 ? `0${m}` : m;
-  secondElement.innerHTML = s < 10 ? `0${s}` : s;
+  hourElement.innerHTML = h;
+  minuteElement.innerHTML = m;
+  secondElement.innerHTML = s;
 };
 
 setInterval(clock, 1000);
